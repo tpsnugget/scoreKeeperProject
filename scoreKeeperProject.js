@@ -1,13 +1,11 @@
 numberOfGames.value = 0
-playerOneScore.value = 0
-playerTwoScore.value = 0
+p1Score.value = 0
+p2Score.value = 0
 
-playerOneScore.innerText = playerOneScore.value
-playerTwoScore.innerText = playerTwoScore.value
-score.innerText = "-to-"
-playingTo.innerText = "Playing to: " + numberOfGames.value
+p1Score.innerText = p1Score.value
+p2Score.innerText = p2Score.value
 
-numberOfGames.addEventListener("mouseup", function () {
+numberOfGames.addEventListener("change", function () {
    playingTo.innerText = "Playing to: " + numberOfGames.value
 })
 
@@ -15,8 +13,8 @@ playerOneButton.addEventListener("click", function () {
 
    playToNumber = Number(numberOfGames.value)
 
-   if (playerOneScore.value < playToNumber && playerTwoScore.value < playToNumber) {
-      playerOneScore.value++
+   if (p1Score.value < playToNumber && p2Score.value < playToNumber) {
+      p1Score.value++
       upDateScore()
    }
 })
@@ -25,29 +23,29 @@ playerTwoButton.addEventListener("click", function () {
 
    playToNumber = Number(numberOfGames.value)
 
-   if (playerOneScore.value < playToNumber && playerTwoScore.value < playToNumber) {
-      playerTwoScore.value++
+   if (p1Score.value < playToNumber && p2Score.value < playToNumber) {
+      p2Score.value++
       upDateScore()
    }
 })
 
 resetButton.addEventListener("click", function () {
-   playerOneScore.value = 0
-   playerTwoScore.value = 0
-   playerOneScore.innerText = playerOneScore.value
-   playerTwoScore.innerText = playerTwoScore.value
-   playerOneScore.style.color = "black"
-   playerTwoScore.style.color = "black"
+   p1Score.value = 0
+   p2Score.value = 0
+   p1Score.innerText = p1Score.value
+   p2Score.innerText = p2Score.value
+   p1Score.style.color = "black"
+   p2Score.style.color = "black"
 })
 
 function upDateScore() {
-   playerOneScore.innerText = playerOneScore.value
-   playerTwoScore.innerText = playerTwoScore.value
+   p1Score.innerText = p1Score.value
+   p2Score.innerText = p2Score.value
 
-   if ( playerOneScore.value === playToNumber || playerTwoScore.value === playToNumber ) {
-      if ( playerOneScore.value === playToNumber ) {
-         playerOneScore.style.color = "green"
+   if ( p1Score.value === playToNumber || p2Score.value === playToNumber ) {
+      if ( p1Score.value === playToNumber ) {
+         p1Score.style.color = "green"
       }
-      else { playerTwoScore.style.color = "green" }
+      else { p2Score.style.color = "green" }
    }
 }

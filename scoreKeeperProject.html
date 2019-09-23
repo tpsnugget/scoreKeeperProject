@@ -33,16 +33,24 @@
       <!-- Update me ---------------------------------------------------------->
       <!-- Update me ---------------------------------------------------------->
 
+      <!--  =========
+              SCORE
+            ========= -->
       <div class="row align-items-center">
-         <div class="col-lg-3  border border-success border-bottom-0 d-inline-flex">
-            <h2 id="playerOneScore" class="mb-0"></h2>
-            <h2 id="score" class="mb-0"></h2>
-            <h2 id="playerTwoScore" class="mb-0"></h2>
+         <div class="color col-lg-3  border border-success border-bottom-0 d-inline-flex">
+            <h2 class="mb-0">
+               <span id="p1Score"></span>
+               <span> to </span>
+               <span id="p2Score"></span>
+            </h2>
          </div>
       </div>
 
+      <!--  =================
+              Playing to: ?
+            ================= -->
       <div class="row align-items-center">
-         <div class="col-lg-3  border border-success border-top-0 border-bottom-0">
+         <div class="color col-lg-3  border border-success border-top-0 border-bottom-0">
             <h3 id="playingTo">Playing to: ?</h3>
          </div>
       </div>
@@ -51,7 +59,7 @@
          <!--  ============
                    INPUT
                ============  -->
-         <div id="input" class="col-lg-3 input-group input-group-sm border 
+         <div id="input" class="color col-lg-3 input-group input-group-sm border 
                                 border-success border-top-0 border-right-0">
             <input id="numberOfGames" type="number" class="form-control" aria-label="Sizing example input"
                aria-describedby="inputGroup-sizing-sm">
@@ -59,20 +67,20 @@
          <!--  ============
                   BUTTONS
                ============  -->
-         <div class="col-lg-2 border border-success border-right-0 border-left-0">
+         <div class="color col-lg-2 border border-success border-right-0 border-left-0">
             <button id="playerOneButton" 
                     class="btn btn-lg btn-success my-1">
                     Player One
             </button>
          </div>
 
-         <div class="col-lg-2 border border-success border-left-0 border-right-0">
+         <div class="color col-lg-2 border border-success border-left-0 border-right-0">
             <button id="playerTwoButton" class="btn btn-lg btn-success my-1">
                Player Two
             </button>
          </div>
 
-         <div class="col-lg-2 border border-success border-left-0">
+         <div class="color col-lg-2 border border-success border-left-0">
             <button id="resetButton" class="btn btn-lg btn-success my-1">Reset</button>
          </div>
       </div>
@@ -91,7 +99,7 @@
 
       <!-- Update me ---------------------------------------------------------->
       <!-- Update me ---------------------------------------------------------->
-      <script src="scoreKeeperProject.js"></script>
+      <script type="text/javascript" src="scoreKeeperProject.js"></script>
       <!-- Update me ---------------------------------------------------------->
       <!-- Update me ---------------------------------------------------------->
 

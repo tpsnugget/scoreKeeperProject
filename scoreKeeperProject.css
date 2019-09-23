@@ -1,3 +1,7 @@
+body {
+   background-color: lightgoldenrodyellow;
+}
+
 h1 {
    text-align: center;
 }
@@ -9,4 +13,8 @@ h2 {
 
 #input {
    height: 58px;
+}
+
+.color {
+   background-color: lightgoldenrodyellow;
 }
