@@ -1,0 +1,12 @@
+h1 {
+   text-align: center;
+}
+
+h2 {
+   font-size: 3rem;
+   font-weight: 700;
+}
+
+#input {
+   height: 58px;
+}
